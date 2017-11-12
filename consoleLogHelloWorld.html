@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Console Log</title>
+	</head>
+	<body>
+		<h1>It's time to get my Home work done</h1>
+		<h1 id= "game">It would be nice to always be on top of my game.</h1>
+		<h2 id="newtext"></h2>
+		<script type="text/javascript">
+			//Get all h1 script in webpage
+			var h1Elements = document.getElementsByTagName ('h1');
+			console.log(h1Elements);
+
+			//display elements in h1 element with game id
+			var gameElement = document.getElementById("game");
+			console.log (game);
+
+			//Insert new text on webpage
+			document.getElementById("newtext").innerHTML = "Even most of the time would be nice";
+			//Change color of game
+			gameElement.style.color = prompt('Give me color')
+
+			//Display message to console
+			console.log ("Hello World")
+		</script>
+
+	</body>
+</html>
