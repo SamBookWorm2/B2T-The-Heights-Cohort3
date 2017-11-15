@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num = 2
+		// prins false
+		console.log(num ==5);// check if equal
+
+		//prints true
+		console.log(num <16);//check if less than
+
+		//printts false
+		console.log(num >16);//check if greater than
+
+		//prints true
+		console.log(num != 5);//checking not equal to
+
+		//true
+		console.log(num >= 2);//checking greater than or equal to
+
+		//true
+		console.log(num === 2);//checking digit and presence of string
+
+		//false
+		console.log( num ==='2')//checking digit and presence of strings
+
+		//Breakdown: num == '2' is true
+		//num > 5 is false
+		//(true && false) is false
+		//prints false because one is false the answer is false
+		console.log( num =='2' && num >5);
+
+		//Breakdown: num == '2' is true
+		//num > 5 is false
+		//(true && false) is false
+		//prints false because one is false the answer is false
+		console.log( num < 16 && num >= 2 && num != 5)
+		var age = prompt('Enter age')
+		if(parseInt(age) >= 25){console.log('you can rent a care!!');
+
+		}else if(parseInt(age) >= 18){
+			console.log('You can buy a car');
+
+		} else{ console.log('No car for you, get an adult');
+
+		}
+
+	</script>
+
+</body>
+</html>
