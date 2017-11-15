@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays and Dom</title>
+	</head>
+	<body>
+		<h1 id="salad"></h1>
+		<script type="text/javascript">
+			var fruit = []
+			fruit.push('apple');
+			fruit.push('orange');
+			fruit.push('kiwi');
+			fruit.push('mango');
+			console.log(fruit);
+			fruit.sort();
+			console.log(fruit);
+			document.getElementById("salad").innerHTML = "There is nothing like a salad with " + fruit.join(' with ');
+			console.log(fruit);
+		</script>
+	</body>
+</html>
