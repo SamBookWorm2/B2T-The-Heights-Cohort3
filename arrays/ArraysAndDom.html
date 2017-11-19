@@ -6,7 +6,7 @@
 	<body>
 		<h1 id="salad"></h1>
 		<script type="text/javascript">
-			var fruit = []
+			var fruit  = []
 			fruit.push('apple');
 			fruit.push('orange');
 			fruit.push('kiwi');
@@ -14,8 +14,15 @@
 			console.log(fruit);
 			fruit.sort();
 			console.log(fruit);
-			document.getElementById("salad").innerHTML = "There is nothing like a salad with " + fruit.join(' with ');
-			console.log(fruit);
+
+			var input = prompt()
+			console.log(document.getElementById("salad").innerHTML = "There is nothing like a salad with " + fruit.join(' with ') + '  and ' + input);
+
+			console.log(fruit)
+
+			
+
+			
 		</script>
 	</body>
 </html>
