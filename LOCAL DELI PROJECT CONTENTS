@@ -1,0 +1,24 @@
+Project involves a queue containing ARRAY of OBJECTS
+	At beginning of day array should be empty
+	When array is empty or is emptied a display message should say 'Line is currently empty'
+	As persons are added to the queue the name and order should be displayed and the position in the q :'1, 2, 3' etc  
+OBJECTS CCONTAIN; customer name, customer order
+	functin should contain name and order
+Display
+	table
+		place	name	order
+		1		mary	sandwich
+		2		Tom		beer
+		(for var[i] = 1; i >0; i++0)
+
+
+		OR
+
+				THE LINE IS CURRENTLY EMPTY
+
+
+
+	customers are removed from the front so:
+		place 	name	order
+		1		Tom		beer
+		

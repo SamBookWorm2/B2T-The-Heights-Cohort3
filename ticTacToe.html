@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		table, tr, th {
+			border:solid 5px #44FF88;
+		}
+		th{
+			width: 200px;
+			height: 200px;
+			margin; auto;
+			font-size: 40px
+		}
+		th:hover{
+			background-color: #cccccc; 
+		}
+	</style>
+</head>
+<body>
+	
+	<table>
+		<tr>
+			<th onclick='makeMove(this)'></th>
+			<th onclick='makeMove(this)'></th>
+			<th onclick='makeMove(this)'></th>
+		</tr>
+		<tr>
+			<th onclick='makeMove(this)'></th>
+			<th onclick='makeMove(this)'></th>
+			<th onclick='makeMove(this)'></th>
+		</tr>
+		<tr>
+			<th  onclick='makeMove(this)'></th>
+			<th onclick='makeMove(this)'></th>
+			<th onclick='makeMove(this)'></th>
+		</tr>
+	</table>
+	
+	<script type="text/javascript">
+		var player = 'X';
+		var gameWon = false
+
+		function makeMove (square){
+			//console.log(player);
+			//first part check if square was occupied
+			//stes the text of the square that has been clicked to players symbol
+			if(square.innerHTML == ''){
+				square.innerHTML = player;
+
+				//function below
+				evalBoard();
+
+				//swith symbol to next player
+
+				if (gameWon) {
+					player = '';
+				}else if (player =='X') {
+					player ='O'
+				}else{
+					player = 'X'
+				}
+				//or does same thing
+				//player = ( player =='X') ? 'O': 'X'
+
+			}
+
+
+			
+		}
+		function evalBoard(){
+			//gets an array of all th elements on our webpage
+			var board = document.getElementsByTagName('th');
+
+			// checking if player has won
+			var row1Wn = board[0].innerHTML != '' && board[0].innerHTML== board[1].innerHTML && board[1].innerHTML == board[2].innerHTML;
+			var row2Win =board[3].innerHTML != '' && board[3].innerHTML== board[4].innerHTML && board[4].innerHTML == board[5].innerHTML;
+
+			if(!gameWon &&(row1Win || row2Win)){
+			
+				console.log(player + 'won the game');
+				gameWon = true;
+
+			}
+		}
+
+		
+	</script>
+
+</body>
+</html>
