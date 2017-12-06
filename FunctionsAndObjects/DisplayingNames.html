@@ -8,23 +8,27 @@
 		<form>
 			First Name: <Input type 'text' id = 'fname' value = 'Curtis'><br>
 			Last Name: <input type="text" id = "lname" value="Jackson"><br>
-			<input type="button" value="Submit" onclick="getFormvalue"();> 
-			<script type="text/javascript">
-
-				function greet(f, l){
-					var name = {
-						fname: f,
-						lname: l
-					};
-					document.getElementById('display').innerHTML = ('Hello' + name);
-				}
-
-				
-				
-			</script>
+			<input type="button" value="Submit" onclick="getFormValue()";> 
 			
 
 		</form>
+	
+			<script type="text/javascript">
+
+				function getFormValue(){
+					var a = document.getElementById('fname').value;
+					var b = document.getElementById('lname').value;
+					document.getElementById('display').innerHTML = ('Hello ' + b+' ' + a);
+					
+					
+				}
+				
+
+				
+				
+				
+			</script>
+		
 
 	</body>
 </html>
