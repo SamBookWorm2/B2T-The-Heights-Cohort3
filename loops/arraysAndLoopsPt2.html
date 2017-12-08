@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		
+		<p id='sum'></p>
+		<script type="text/javascript">
+
+			var array = [5, 2, 10, 0, 50, 1900, 25,25];
+
+			for(var i =0; i < array.length; i++){
+				 
+				console.log(array[i]);
+			}
+
+			for(var i =0; i < array.length; i++){
+				document.getElementById('sum').innerHTML = eval(array.join('+'));
+				console.log(eval(array.join('+')));
+				
+				
+				
+
+			}
+			
+
+
+
+			
+			
+
+		</script>
+		
+
+	</body>
+</html>
